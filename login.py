@@ -42,12 +42,14 @@ def clean_page():
 window.after(1000, clean_page)
 
 
+# ------- Introduce Text --------
 def intr_text():
     inro_text = Label(text=INTRODUCE_TEXT,
                       font=("Monotype Corsiva", 14, "bold"),
                       fg=FONT_COLOR,
                       background=BACKGROUND_COLOR)
 
+    # -------- Cleaning Page -----------
     def cleaning():
         btn_go.destroy()
         inro_text.destroy()
@@ -65,7 +67,54 @@ def intr_text():
 
 window.after(2000, intr_text)
 
-# -------- Cleaning Page -----------
+
+# --------- Signin Section ---------
+def signin():
+    signin = Label(text="Sign in",
+                   font=("Monotype Corsiva", 20, "bold"),
+                   fg=FONT_COLOR,
+                   background=BACKGROUND_COLOR)
+    signin.place(x=10, y=10)
+
+    user_name_label = Label(text='User Name:',
+                            font=("Monotype Corsiva", 15, "bold"),
+                            fg=FONT_COLOR,
+                            background=BACKGROUND_COLOR)
+    user_name_entry = Entry(width=35)
+    user_name_label.place(x=20, y=20)
+    user_name_entry.place(x=30, y=20)
+
+    password_label = Label(text='Password:',
+                           font=("Monotype Corsiva", 15, "bold"),
+                           fg=FONT_COLOR,
+                           background=BACKGROUND_COLOR)
+    password_entry = Entry(width=35)
+    password_label.place()
+    password_entry.place()
+
+    graph_id_label = Label(text='Graph ID:',
+                           font=("Monotype Corsiva", 15, "bold"),
+                           fg=FONT_COLOR,
+                           background=BACKGROUND_COLOR)
+    graph_id_entry = Entry(width=35)
+    graph_id_label.place()
+    graph_id_entry.place()
+
+    email_label = Label(text='Email:',
+                        font=("Monotype Corsiva", 15, "bold"),
+                        fg=FONT_COLOR,
+                        background=BACKGROUND_COLOR)
+    email_entry = Entry(width=35)
+    email_label.place()
+    email_entry.place()
+
+    email_password_label = Label(text='Email Password:',
+                                 font=("Mono-type Corsiva", 15, "bold"),
+                                 fg=FONT_COLOR,
+                                 background=BACKGROUND_COLOR)
+    email_password_entry = Entry()
+    email_password_label.place()
+    email_password_entry.place()
 
 
 window.mainloop()
