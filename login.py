@@ -53,6 +53,7 @@ def intr_text():
     def cleaning():
         btn_go.destroy()
         inro_text.destroy()
+        signin()
 
     btn_go = Button(
         text="Let's Go",
@@ -70,11 +71,11 @@ window.after(2000, intr_text)
 
 # --------- Signin Section ---------
 def signin():
-    signin = Label(text="Sign in",
-                   font=("Monotype Corsiva", 20, "bold"),
-                   fg=FONT_COLOR,
-                   background=BACKGROUND_COLOR)
-    signin.place(x=10, y=10)
+    sign_in = Label(text="Sign in",
+                    font=("Monotype Corsiva", 20, "bold"),
+                    fg=FONT_COLOR,
+                    background=BACKGROUND_COLOR)
+    sign_in.place(x=10, y=10)
 
     user_name_label = Label(text='User Name:',
                             font=("Monotype Corsiva", 15, "bold"),
@@ -82,39 +83,39 @@ def signin():
                             background=BACKGROUND_COLOR)
     user_name_entry = Entry(width=35)
     user_name_label.place(x=20, y=20)
-    user_name_entry.place(x=30, y=20)
+    user_name_entry.place(x=182, y=20)
 
     password_label = Label(text='Password:',
                            font=("Monotype Corsiva", 15, "bold"),
                            fg=FONT_COLOR,
                            background=BACKGROUND_COLOR)
     password_entry = Entry(width=35)
-    password_label.place()
-    password_entry.place()
+    password_label.place(x=20, y=250)
+    password_entry.place(x=182, y=250)
 
     graph_id_label = Label(text='Graph ID:',
                            font=("Monotype Corsiva", 15, "bold"),
                            fg=FONT_COLOR,
                            background=BACKGROUND_COLOR)
     graph_id_entry = Entry(width=35)
-    graph_id_label.place()
-    graph_id_entry.place()
+    graph_id_label.place(x=20)
+    graph_id_entry.place(x=182, y=)
 
     email_label = Label(text='Email:',
                         font=("Monotype Corsiva", 15, "bold"),
                         fg=FONT_COLOR,
                         background=BACKGROUND_COLOR)
     email_entry = Entry(width=35)
-    email_label.place()
-    email_entry.place()
+    email_label.place(x=20, y=150)
+    email_entry.place(x=182, y=200)
 
     email_password_label = Label(text='Email Password:',
                                  font=("Mono-type Corsiva", 15, "bold"),
                                  fg=FONT_COLOR,
                                  background=BACKGROUND_COLOR)
     email_password_entry = Entry()
-    email_password_label.place()
-    email_password_entry.place()
+    email_password_label.place(x=20, y=250)
+    email_password_entry.place(x=182, y=255)
 
 
 window.mainloop()
