@@ -72,50 +72,75 @@ window.after(2000, intr_text)
 # --------- Signin Section ---------
 def signin():
     sign_in = Label(text="Sign in",
-                    font=("Monotype Corsiva", 20, "bold"),
+                    font=("Monotype Corsiva", 40, "bold"),
                     fg=FONT_COLOR,
                     background=BACKGROUND_COLOR)
-    sign_in.place(x=10, y=10)
+    sign_in.place(x=140, y=10)
 
     user_name_label = Label(text='User Name:',
-                            font=("Monotype Corsiva", 15, "bold"),
+                            font=("Monotype Corsiva", 17, "bold"),
                             fg=FONT_COLOR,
                             background=BACKGROUND_COLOR)
-    user_name_entry = Entry(width=35)
-    user_name_label.place(x=20, y=20)
-    user_name_entry.place(x=182, y=20)
+    user_name_entry = Entry(width=25)
+    user_name_label.place(x=20, y=100)
+    user_name_entry.place(x=182, y=105)
 
     password_label = Label(text='Password:',
-                           font=("Monotype Corsiva", 15, "bold"),
+                           font=("Monotype Corsiva", 17, "bold"),
                            fg=FONT_COLOR,
                            background=BACKGROUND_COLOR)
-    password_entry = Entry(width=35)
-    password_label.place(x=20, y=250)
-    password_entry.place(x=182, y=250)
+    password_entry = Entry(width=25)
+    password_label.place(x=20, y=135)
+    password_entry.place(x=182, y=140)
 
     graph_id_label = Label(text='Graph ID:',
-                           font=("Monotype Corsiva", 15, "bold"),
+                           font=("Monotype Corsiva", 17, "bold"),
                            fg=FONT_COLOR,
                            background=BACKGROUND_COLOR)
-    graph_id_entry = Entry(width=35)
-    graph_id_label.place(x=20)
-    graph_id_entry.place(x=182, y=)
+    graph_id_entry = Entry(width=25)
+    graph_id_label.place(x=20, y=170)
+    graph_id_entry.place(x=182, y=175)
 
     email_label = Label(text='Email:',
-                        font=("Monotype Corsiva", 15, "bold"),
+                        font=("Monotype Corsiva", 17, "bold"),
                         fg=FONT_COLOR,
                         background=BACKGROUND_COLOR)
-    email_entry = Entry(width=35)
-    email_label.place(x=20, y=150)
-    email_entry.place(x=182, y=200)
+    email_entry = Entry(width=25)
+    email_label.place(x=20, y=205)
+    email_entry.place(x=182, y=210)
 
-    email_password_label = Label(text='Email Password:',
-                                 font=("Mono-type Corsiva", 15, "bold"),
+    email_password_label = Label(text='E-Password:',
+                                 font=("Monotype Corsiva", 17, "bold"),
                                  fg=FONT_COLOR,
                                  background=BACKGROUND_COLOR)
-    email_password_entry = Entry()
-    email_password_label.place(x=20, y=250)
-    email_password_entry.place(x=182, y=255)
+    email_password_entry = Entry(width=25)
+    email_password_label.place(x=20, y=240)
+    email_password_entry.place(x=182, y=245)
+
+    btn_forget_account = Button(text="Forget Account pass",
+                                width=15,
+                                background=FONT_COLOR,
+                                fg=BACKGROUND_COLOR,
+                                )
+    btn_forget_account.place(x=195, y=320)
+    btn_forget_email = Button(text="Forget Email pass",
+                              width=15,
+                              background=FONT_COLOR,
+                              fg=BACKGROUND_COLOR,
+                              )
+    btn_forget_email.place(x=195, y=280)
+    btn_new_account = Button(text="Have already account?",
+                             width=17,
+                             background=FONT_COLOR,
+                             fg=BACKGROUND_COLOR,
+                             )
+    btn_new_account.place(x=190, y=360)
+    btn_signin = Button(text="Sign in",
+                        width=20,
+                        background=FONT_COLOR,
+                        fg=BACKGROUND_COLOR,
+                        )
+    btn_signin.place(x=182, y=400)
 
 
 window.mainloop()
