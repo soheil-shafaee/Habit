@@ -8,4 +8,4 @@ Are you looking to build positive habits and track your progress over time? Look
 4. Reminders and Notifications: Stay on track with timely reminders and notifications. HabitApp enables you to set reminders for specific habits, ensuring that you stay focused and motivated to maintain your desired routines.
 5. Analytics and Insights: Dive deeper into your habits' performance with HabitApp's analytics and insights. Gain a clear understanding of your progress, identify areas for improvement, and make data-driven decisions to optimize your habits.
 6. Social Community: Connect with a community of like-minded individuals pursuing similar goals. Share your achievements, seek support, and engage in healthy competition to stay motivated and inspired.
-With HabitApp, transforming your habits and achieving personal growth is just a few taps away. Start your journey towards a healthier, more productive lifestyle today!
+   With HabitApp, transforming your habits and achieving personal growth is just a few taps away. Start your journey towards a healthier, more productive lifestyle today!
